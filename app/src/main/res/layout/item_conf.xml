@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_toStartOf="@id/tvRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:padding="2dp"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Now you see Kotlin" />
+
+        <TextView
+            android:id="@+id/tvSpekaer"
+            android:padding="2dp"
+            android:textColor="@color/grey_800"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Myat Min Soe" />
+
+    </LinearLayout>
+
+    <TextView
+        android:textSize="12sp"
+        android:id="@+id/tvRoom"
+        android:padding="4dp"
+        android:textColor="@color/white"
+        android:background="@drawable/room"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        tools:text="Conference Hall" />
+
+
+</RelativeLayout>
